@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "infrastructure", "infrastructure", "{0F35F684-36F8-431F-A802-DD5DBD89BE98}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{238703F3-EE12-445D-9FC4-2524A250941A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{2585AB88-1C0E-46CA-95F1-5BF305D8DA89}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeAutomation.API", "HomeAutomation.API\HomeAutomation.API.csproj", "{01CB8EF9-6D3A-4CC8-B420-6CE794F64A2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeAutomation.Domain", "HomeAutomation.Domain\HomeAutomation.Domain.csproj", "{9AED2C17-E8C1-43E3-BB3D-57E91BC70005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeAutomation.infrastructure", "HomeAutomation.infrastructure\HomeAutomation.infrastructure.csproj", "{A3202A1D-B57E-4FC1-9B1B-9032DE1DE22A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeAutomation.Application", "HomeAutomation.Application\HomeAutomation.Application.csproj", "{30DACAC8-2516-457F-852F-FDEEBBC38C24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{01CB8EF9-6D3A-4CC8-B420-6CE794F64A2B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CB8EF9-6D3A-4CC8-B420-6CE794F64A2B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CB8EF9-6D3A-4CC8-B420-6CE794F64A2B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CB8EF9-6D3A-4CC8-B420-6CE794F64A2B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AED2C17-E8C1-43E3-BB3D-57E91BC70005}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AED2C17-E8C1-43E3-BB3D-57E91BC70005}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AED2C17-E8C1-43E3-BB3D-57E91BC70005}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AED2C17-E8C1-43E3-BB3D-57E91BC70005}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3202A1D-B57E-4FC1-9B1B-9032DE1DE22A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3202A1D-B57E-4FC1-9B1B-9032DE1DE22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3202A1D-B57E-4FC1-9B1B-9032DE1DE22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3202A1D-B57E-4FC1-9B1B-9032DE1DE22A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30DACAC8-2516-457F-852F-FDEEBBC38C24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30DACAC8-2516-457F-852F-FDEEBBC38C24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30DACAC8-2516-457F-852F-FDEEBBC38C24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30DACAC8-2516-457F-852F-FDEEBBC38C24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{01CB8EF9-6D3A-4CC8-B420-6CE794F64A2B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{9AED2C17-E8C1-43E3-BB3D-57E91BC70005} = {238703F3-EE12-445D-9FC4-2524A250941A}
+		{A3202A1D-B57E-4FC1-9B1B-9032DE1DE22A} = {0F35F684-36F8-431F-A802-DD5DBD89BE98}
+		{30DACAC8-2516-457F-852F-FDEEBBC38C24} = {2585AB88-1C0E-46CA-95F1-5BF305D8DA89}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {159F4B9B-411F-4C9A-BF7C-213D160C95D3}
+	EndGlobalSection
+EndGlobal
