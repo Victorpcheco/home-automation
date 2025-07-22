@@ -4,7 +4,8 @@
     {
         Task<IReadOnlyList<T>> ListarTodosAsync();
         Task<T> ObterPorIdAsync(int id);
-        Task<T> AdicionarAsync(T entity);
+        Task<T> ObterPorNomeAsync(string nome);
+        Task AdicionarAsync(T entity);
         Task AtualizarAsync(T entity);
         Task RemoverAsync(T entity);
     }

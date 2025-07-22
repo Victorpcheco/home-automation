@@ -1,3 +1,4 @@
+using HomeAutomation.Application.Mappers;
 using HomeAutomation.infrastructure.Data;
 using HomeAutomation.infrastructure.Extensions;
 using Microsoft.EntityFrameworkCore;
@@ -11,24 +12,27 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddRepositories();
 builder.Services.AddServices();
 
-builder.Services.AddControllers(); 
-builder.Services.AddEndpointsApiExplorer(); 
-builder.Services.AddSwaggerGen(); 
+// mapper
+builder.Services.AddAutoMapperProfiles();
 
-var app = builder.Build(); 
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();    
-    app.UseSwaggerUI();    
+    app.UseSwagger();
+    app.UseSwaggerUI();
 }
 
 app.UseHttpsRedirection();
 
 app.UseMiddleware<HomeAutomation.API.Middlewares.ExceptionMiddleware>();
 
-app.UseAuthorization(); 
+app.UseAuthorization();
 
-app.MapControllers(); 
+app.MapControllers();
 
-app.Run(); 
+app.Run();

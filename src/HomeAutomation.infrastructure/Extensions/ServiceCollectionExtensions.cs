@@ -1,4 +1,5 @@
-﻿using HomeAutomation.Application.Services.Impl;
+﻿using HomeAutomation.Application.Mappers;
+using HomeAutomation.Application.Services.Impl;
 using HomeAutomation.Application.Services.Interface;
 using HomeAutomation.Domain.Interfaces;
 using HomeAutomation.infrastructure.Repositories;
@@ -17,6 +18,12 @@ namespace HomeAutomation.infrastructure.Extensions
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
             services.AddScoped<IDispositivoService, DispositivoService>();
+            return services;
+        }
+
+        public static IServiceCollection AddAutoMapperProfiles(this IServiceCollection services)
+        {
+            services.AddAutoMapper(typeof(DispositivoMapper));
             return services;
         }
     }

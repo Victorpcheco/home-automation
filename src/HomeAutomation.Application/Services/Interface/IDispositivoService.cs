@@ -4,7 +4,10 @@ namespace HomeAutomation.Application.Services.Interface
 {
     public interface IDispositivoService
     {
-        Task<IReadOnlyList<DispositivoResponse>> ListarTodos();
-        Task<DispositivoResponse> ObterPorId(int id);
+        Task<IReadOnlyList<DispositivoResponseDto>> ListarTodos();
+        Task<DispositivoResponseDto> ObterPorId(int id);
+        Task<DispositivoResponseDto> Adicionar(DispositivoRequestDto request);
+        Task<DispositivoResponseDto> Atualizar(int id, DispositivoRequestDto request);
+        Task<bool> Remover(int id);
     }
 }

@@ -27,11 +27,15 @@ namespace HomeAutomation.infrastructure.Repositories
             return await _dbSet.FindAsync(id);
         }
 
-        public async Task<T> AdicionarAsync(T entity)
+        public async Task<T> ObterPorNomeAsync(string nome)
+        {
+            return await _dbSet.FirstOrDefaultAsync(e => EF.Property<string>(e, "Nome") == nome);
+        }
+
+        public async Task AdicionarAsync(T entity)
         {
             await _dbSet.AddAsync(entity);
             await _context.SaveChangesAsync();
-            return entity;
         }
 
         public async Task AtualizarAsync(T entity)
