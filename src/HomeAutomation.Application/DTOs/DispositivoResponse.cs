@@ -1,11 +1,7 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-namespace HomeAutomation.Domain.Entidades
+﻿namespace HomeAutomation.Application.DTOs
 {
-    public class Dispositivo
+    public class DispositivoResponse
     {
-        [Key]
-        public int Id { get; set; }
         public string Nome { get; set; } = null!;
         public string Tipo { get; set; } = null!;
         public string Estado { get; set; } = null!;
